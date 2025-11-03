@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "tailwindcss";
+
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+}
+
+:root {
+  --shop: #3a4b5dd7;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+* {
+  scrollbar-width: none;
+}
+
+.my-scroll-hidden::-webkit-scrollbar {
+  display: none;
+}
+.my-scroll-hidden {
+  scrollbar-width: none;
+}
