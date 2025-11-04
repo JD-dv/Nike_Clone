@@ -1,11 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Luckiest+Guy&display=swap");
 @import "tailwindcss";
-
 
 @theme {
   --font-inter: "Inter", sans-serif;
+  --font-luckyguy: "Luckiest Guy", cursive;
 }
-
+.luckyguy {
+  font-family: var(--font-luckyguy);
+}
+body{
+  background-color: #F5F5F5;
+}
 :root {
   --shop: #3a4b5dd7;
 }
