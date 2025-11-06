@@ -7,6 +7,9 @@ import nike_shoe_3 from "../assets/images/nike_shoe_3.svg";
 import shoe_grid from "../assets/images/shoe_grid.png";
 import blue_grid from "../assets/images/blue_grid.png";
 import long_grid from "../assets/images/long_grid.png";
+import sport_pink_shoe from "../assets/images/sport_pink_shoe.png"
+import sport_green_shoe from "../assets/images/sport_green_shoe.png"
+import sport_colorful_shoe from "../assets/images/sport_colorful_shoe.png"
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
@@ -41,7 +44,7 @@ function Home() {
       </main>
 
       <section className="mt-80 w-screen sm:h-[1800px] md:h-[900px] lg:h-[950px]">
-        <h1 className="luckyguy flex justify-center text-9xl max-sm:text-7xl ">
+        <h1 className="luckyguy flex justify-center text-9xl max-sm:text-7xl sm:text-8xl">
           Life Style
         </h1>
         <div className="flex max-sm:flex-col sm:flex-col relative w-screen lg:mt-10">
@@ -53,7 +56,7 @@ function Home() {
           <img
             src={nike_shoe_2}
             alt=""
-            className="md:absolute md:w-[320px] lg:w-[520px] md:top-[190px]"
+            className="md:absolute md:w-[320px] lg:w-[520px] md:top-[190px] lg:top-[300px]"
             style={{ left: "32vw" }}
           />
           <img
@@ -64,7 +67,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="h-[1000px] mx-5 max-sm:mt-80">
+      <section className="min-h-[1000px] mx-5 max-sm:mt-80">
         <h1 className="font-inter flex justify-center text-3xl sm:text-5xl lg:text-7xl">
           Comfort Style Versatility.
         </h1>
@@ -78,8 +81,8 @@ function Home() {
           </div>
         </div>
 
-        <div className="mt-10 ml-20">
-          <h2 className="mb-5 text-4xl sm:mb-10 sm:text-5xl">Your perfect everyday Nike.</h2>
+        <div className="mt-10 xl:ml-20 max-sm:ml-5 sm:ml-6">
+          <h2 className="mb-5 text-4xl max-sm:mb-14 sm:mb-10 sm:text-5xl">Your perfect everyday Nike.</h2>
           <Link>
             <span className="bg-[#38506b] max-sm:text-2xl  p-2 rounded-lg text-[#e6ebf0d3] sm:text-[25px]">
               Shop Life Style Shoes
@@ -87,6 +90,19 @@ function Home() {
           </Link>
         </div>
       </section>
+
+    <section className="min-h-[1000px] max-sm:mt-[300px] xl:mt-[450px]">
+      <h1 className="flex justify-center text-6xl nosifer text-[#A1CEE7]">Sports</h1>
+
+      <div className="flex flex-col justify-center items-center gap-15 md:relative md:relative md:h-[800px]">
+        <img src={sport_pink_shoe} alt=""     className=" max-sm:w-[300px] max-sm:mt-20 md:absolute md:top-[83px] md:right-0 xl:right-20"/>
+        <img src={sport_green_shoe} alt=""    className="max-sm:w-[300px] md:absolute md:top-[350px]" />
+        <img src={sport_colorful_shoe} alt="" className="max-sm:w-[300px] md:absolute md:top-[590px] md:left-0 xl:left-20" />
+      </div>
+
+      <h1 className="flex justify-center text-6xl nosifer mt-90 text-[#818F90]">BASKETBALL</h1>
+    </section>
+
     </>
   );
 }
