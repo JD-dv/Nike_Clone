@@ -7,9 +7,13 @@ import nike_shoe_3 from "../assets/images/nike_shoe_3.svg";
 import shoe_grid from "../assets/images/shoe_grid.png";
 import blue_grid from "../assets/images/blue_grid.png";
 import long_grid from "../assets/images/long_grid.png";
-import sport_pink_shoe from "../assets/images/sport_pink_shoe.png"
-import sport_green_shoe from "../assets/images/sport_green_shoe.png"
-import sport_colorful_shoe from "../assets/images/sport_colorful_shoe.png"
+import sport_pink_shoe from "../assets/images/sport_pink_shoe.png";
+import sport_green_shoe from "../assets/images/sport_green_shoe.png";
+import sport_colorful_shoe from "../assets/images/sport_colorful_shoe.png";
+import lebron from "../assets/images/lebron.png";
+import clark from "../assets/images/clark.png";
+import tatum from "../assets/images/tatum.png";
+import giannis from "../assets/images/giannis.png";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
@@ -71,7 +75,7 @@ function Home() {
         <h1 className="font-inter flex justify-center text-3xl sm:text-5xl lg:text-7xl">
           Comfort Style Versatility.
         </h1>
-        <div className="flex justify-center gap-10 mt-10 max-sm:flex-col">
+        <div className="flex justify-center items-center gap-10 mt-10 max-sm:flex-col">
           <div className="">
             <img src={shoe_grid} alt="" className="mb-8" />
             <img src={blue_grid} alt="" />
@@ -82,7 +86,9 @@ function Home() {
         </div>
 
         <div className="mt-10 xl:ml-20 max-sm:ml-5 sm:ml-6">
-          <h2 className="mb-5 text-4xl max-sm:mb-14 sm:mb-10 sm:text-5xl">Your perfect everyday Nike.</h2>
+          <h2 className="mb-5 text-4xl max-sm:mb-14 sm:mb-10 sm:text-5xl">
+            Your perfect everyday Nike.
+          </h2>
           <Link>
             <span className="bg-[#38506b] max-sm:text-2xl  p-2 rounded-lg text-[#e6ebf0d3] sm:text-[25px]">
               Shop Life Style Shoes
@@ -91,18 +97,95 @@ function Home() {
         </div>
       </section>
 
-    <section className="min-h-[1000px] max-sm:mt-[300px] xl:mt-[450px]">
-      <h1 className="flex justify-center text-6xl nosifer text-[#A1CEE7]">Sports</h1>
+      <section className="min-h-[1000px] max-sm:mt-[300px] xl:mt-[450px]">
+        <h1 className="flex justify-center items-center text-6xl nosifer text-[#A1CEE7]">
+          Sports
+        </h1>
 
-      <div className="flex flex-col justify-center items-center gap-15 md:relative md:relative md:h-[800px]">
-        <img src={sport_pink_shoe} alt=""     className=" max-sm:w-[300px] max-sm:mt-20 md:absolute md:top-[83px] md:right-0 xl:right-20"/>
-        <img src={sport_green_shoe} alt=""    className="max-sm:w-[300px] md:absolute md:top-[350px]" />
-        <img src={sport_colorful_shoe} alt="" className="max-sm:w-[300px] md:absolute md:top-[590px] md:left-0 xl:left-20" />
+        <div className="flex flex-col justify-center items-center gap-15 md:relative md:h-[800px]">
+          <img
+            src={sport_pink_shoe}
+            alt=""
+            className=" max-sm:w-[300px] max-sm:mt-20 md:absolute md:top-[83px] md:right-0 xl:right-20 sm:mt-15"
+          />
+          <img
+            src={sport_green_shoe}
+            alt=""
+            className="max-sm:w-[300px] md:absolute md:top-[350px]"
+          />
+          <img
+            src={sport_colorful_shoe}
+            alt=""
+            className="max-sm:w-[300px] md:absolute md:top-[590px] md:left-0 xl:left-20"
+          />
+        </div>
+
+        <h1 className="flex justify-center nosifer mt-90 text-[#818F90] max-sm:text-[40px] sm:text-7xl md:text-8xl lg:text-9xl">
+          BASKETBALL
+        </h1>
+
+        <div className="mb-80">
+          <div className="flex justify-center mt-25">
+            <div>
+              <img src={lebron} alt="" />
+              <p className="mt-4 opacity-60">
+                "I like criticism. It makes you strong."
+              </p>
+              <b className="ml-3">-Lebron James</b>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center items-center mr-20 mb-80">
+          <div className="flex items-center ">
+            <img src={clark} alt="" />
+            <div>
+              <p className="pl-6 opacity-60">
+                "If you want to be the best, you have to embrace the grind."
+              </p>
+              <b className="pl-9">-Caitlin Clark</b>
+              <b></b>
+            </div>
+          </div>
+          <div></div>
+        </div>
+
+        <div className="flex justify-center items-center ml-10 mb-80">
+          <div className="flex items-center flex-row-reverse">
+            <img src={tatum} alt="" />
+            <div>
+              <p className="pr-6 opacity-60 whitespace-pre-line">
+                “You have to believe in yourself when no one else does.”
+              </p>
+
+              <b className="pr-9">-Jason Tatum</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div className="flex justify-center items-center mr-20 mb-15 relative min-h-[800px]">
+        <div className="flex items-center ">
+          <img src={giannis} alt="" />
+
+          <div>
+            <p className="pl-6 opacity-60">
+              “I never get too high on my highs or too low on my lows.”
+            </p>
+            <b className="pl-9">-Giannis Antetokounmpo</b>
+            <b></b>
+          </div>
+        </div>
+        <div></div>
       </div>
 
-      <h1 className="flex justify-center text-6xl nosifer mt-90 text-[#818F90]">BASKETBALL</h1>
-    </section>
-
+      <div className="ml">
+      <Link>
+        <span className="bg-[#38506b] max-sm:text-2xl  p-2 rounded-lg text-[#e6ebf0d3] sm:text-[25px]">
+          Shop Life Style Shoes
+        </span>
+      </Link>
+      </div>
     </>
   );
 }
