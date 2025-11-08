@@ -14,6 +14,9 @@ import lebron from "../assets/images/lebron.png";
 import clark from "../assets/images/clark.png";
 import tatum from "../assets/images/tatum.png";
 import giannis from "../assets/images/giannis.png";
+import colorfull_run from "../assets/images/colorfull_run.png";
+import white_run from "../assets/images/white_run.png";
+import blue_run from "../assets/images/blue_run.png";
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
@@ -120,14 +123,18 @@ function Home() {
           />
         </div>
 
-        <h1 className="flex justify-center nosifer mt-90 text-[#818F90] max-sm:text-[40px] sm:text-7xl md:text-8xl lg:text-9xl">
+        <h1 className="flex justify-center nosifer mt-50 text-[#818F90] max-sm:text-[40px] sm:text-7xl md:text-7xl lg:text-9xl">
           BASKETBALL
         </h1>
 
-        <div className="mb-80">
-          <div className="flex justify-center mt-25">
+        <div className="mb-40">
+          <div className="flex justify-center mt-25  max-sm:justify-center max-sm:items-center">
             <div>
-              <img src={lebron} alt="" />
+              <img
+                src={lebron}
+                alt=""
+                className="max-sm:w-[400px] sm:w-[640px]  md:w-[860px] lg:w-[1000px]"
+              />
               <p className="mt-4 opacity-60">
                 "I like criticism. It makes you strong."
               </p>
@@ -136,56 +143,75 @@ function Home() {
           </div>
         </div>
 
-        <div className="flex justify-center items-center mr-20 mb-80">
-          <div className="flex items-center ">
-            <img src={clark} alt="" />
-            <div>
-              <p className="pl-6 opacity-60">
+        <div className="lg:flex lg:justify-center lg:items-center mb-40">
+          <div className="flex flex-col text-center lg:flex-row lg:text-left lg:items-center">
+            <img
+              src={clark}
+              alt=""
+              className="w-[400px] sm:w-[640px] md:w-[560px] lg:w-[500px] mx-auto lg:mx-0"
+            />
+            <div className="lg:ml-6 mt-4 lg:mt-0">
+              <p className="opacity-60">
                 "If you want to be the best, you have to embrace the grind."
               </p>
-              <b className="pl-9">-Caitlin Clark</b>
+              <b>-Caitlin Clark</b>
+            </div>
+          </div>
+          <div></div>
+        </div>
+
+        <div className="lg:flex lg:justify-center lg:items-center mb-40 lg:ml-10 xl:ml-21">
+          <div className="flex flex-col items-center text-center lg:flex-row lg:items-center lg:text-left">
+            <img
+              src={tatum}
+              alt=""
+              className="w-[400px] sm:w-[640px] lg:w-[500px] mx-auto lg:mx-0"
+            />
+            <div className="lg:ml-6 mt-4 lg:mt-0">
+              <p className="mt-4 opacity-60 max-sm:w-[400px] sm:w-[550px]">
+                "At the end of the day, we all want to win, so everybody has to
+                sacrifice when you want to be a part of something special."
+              </p>
+              <b>-Jason Tatum</b>
+            </div>
+          </div>
+        </div>
+
+        <div className="lg:flex lg:justify-center lg:items-center mb-15 lg:ml-12">
+          <div className="flex flex-col items-center text-center lg:flex-row lg:items-center lg:text-left max-sm:flex max-sm:flex-col max-sm:text-center  sm:flex-col sm:text-center">
+            <img src={giannis} alt="" className="max-sm:w-[350px] lg:mr-6" />
+
+            <div>
+              <p className="mt-4 max-sm:ml-2  opacity-60 max-sm:w-[350px] sm:w-[550px]">
+                "Whatever I try to do, I always try to give it my best and try
+                to be a killer because, at the end of the day, if you don't work
+                hard, you are not going to get food on your table."
+              </p>
+              <b className="max-sm:ml-3">-Giannis Antetokounmpo</b>
               <b></b>
             </div>
           </div>
           <div></div>
         </div>
 
-        <div className="flex justify-center items-center ml-10 mb-80">
-          <div className="flex items-center flex-row-reverse">
-            <img src={tatum} alt="" />
-            <div>
-              <p className="pr-6 opacity-60 whitespace-pre-line">
-                “You have to believe in yourself when no one else does.”
-              </p>
-
-              <b className="pr-9">-Jason Tatum</b>
-            </div>
-          </div>
+        <div className="max-sm:ml-7 sm:ml-10 md:ml-22 xl:ml-56 mb-50">
+          <Link>
+            <span className="bg-[#38506b] max-sm:text-2xl  p-2 rounded-lg text-[#e6ebf0d3] sm:text-[25px]">
+              Shop Life Style Shoes
+            </span>
+          </Link>
         </div>
       </section>
 
-      <div className="flex justify-center items-center mr-20 mb-15 relative min-h-[800px]">
-        <div className="flex items-center ">
-          <img src={giannis} alt="" />
+      <section className="min-h-[1000px] max-sm:mt-[300px] xl:mt-[450px]">
+        <h1 className="quando flex justify-center text-9xl max-sm:text-7xl sm:text-8xl text-[#81A7C8]">Runners</h1>
 
-          <div>
-            <p className="pl-6 opacity-60">
-              “I never get too high on my highs or too low on my lows.”
-            </p>
-            <b className="pl-9">-Giannis Antetokounmpo</b>
-            <b></b>
-          </div>
+        <div className="relative maxlg:flex max-lg:flex-col max-lg:items-center">
+      <img src={white_run} alt="" className="lg:absolute lg:left-10" />
+      <img src={colorfull_run} alt="" className="lg:absolute lg:left-[500px] lg:top-[200px]"/>
+      <img src={blue_run} alt=""  className="lg:absolute lg:right-10"/>
         </div>
-        <div></div>
-      </div>
-
-      <div className="ml">
-      <Link>
-        <span className="bg-[#38506b] max-sm:text-2xl  p-2 rounded-lg text-[#e6ebf0d3] sm:text-[25px]">
-          Shop Life Style Shoes
-        </span>
-      </Link>
-      </div>
+      </section>
     </>
   );
 }
