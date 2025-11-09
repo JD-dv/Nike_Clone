@@ -17,6 +17,9 @@ import giannis from "../assets/images/giannis.png";
 import colorfull_run from "../assets/images/colorfull_run.png";
 import white_run from "../assets/images/white_run.png";
 import blue_run from "../assets/images/blue_run.png";
+import run_1 from "../assets/images/run_1.png"
+import run_2 from "../assets/images/run_2.png"
+import run_3 from "../assets/images/run_3.png"
 import Navbar from "../components/Navbar";
 import { Link } from "react-router-dom";
 
@@ -123,17 +126,17 @@ function Home() {
           />
         </div>
 
-        <h1 className="flex justify-center nosifer mt-50 text-[#818F90] max-sm:text-[40px] sm:text-7xl md:text-7xl lg:text-9xl">
+        <h1 className="flex justify-center nosifer mt-50 text-[#818F90] max-sm:text-[40px] sm:text-7xl md:text-7xl lg:text-8xl">
           BASKETBALL
         </h1>
 
         <div className="mb-40">
           <div className="flex justify-center mt-25  max-sm:justify-center max-sm:items-center">
-            <div>
+            <div className="text-center">
               <img
                 src={lebron}
                 alt=""
-                className="max-sm:w-[400px] sm:w-[640px]  md:w-[860px] lg:w-[1000px]"
+                className="max-sm:w-[400px] sm:w-[640px]  md:w-[660px] lg:w-[1000px]"
               />
               <p className="mt-4 opacity-60">
                 "I like criticism. It makes you strong."
@@ -160,7 +163,7 @@ function Home() {
           <div></div>
         </div>
 
-        <div className="lg:flex lg:justify-center lg:items-center mb-40 lg:ml-10 xl:ml-21">
+        <div className="lg:flex lg:justify-center lg:items-center mb-40 lg:mr-30 xl:mr-53 xl:ml-21">
           <div className="flex flex-col items-center text-center lg:flex-row lg:items-center lg:text-left">
             <img
               src={tatum}
@@ -168,7 +171,7 @@ function Home() {
               className="w-[400px] sm:w-[640px] lg:w-[500px] mx-auto lg:mx-0"
             />
             <div className="lg:ml-6 mt-4 lg:mt-0">
-              <p className="mt-4 opacity-60 max-sm:w-[400px] sm:w-[550px]">
+              <p className="mt-4 opacity-60 max-sm:w-[400px] sm:w-[550px] lg:w-[300px]">
                 "At the end of the day, we all want to win, so everybody has to
                 sacrifice when you want to be a part of something special."
               </p>
@@ -177,12 +180,12 @@ function Home() {
           </div>
         </div>
 
-        <div className="lg:flex lg:justify-center lg:items-center mb-15 lg:ml-12">
+        <div className="lg:flex lg:justify-center lg:items-center mb-15  lg:mr-30">
           <div className="flex flex-col items-center text-center lg:flex-row lg:items-center lg:text-left max-sm:flex max-sm:flex-col max-sm:text-center  sm:flex-col sm:text-center">
             <img src={giannis} alt="" className="max-sm:w-[350px] lg:mr-6" />
 
             <div>
-              <p className="mt-4 max-sm:ml-2  opacity-60 max-sm:w-[350px] sm:w-[550px]">
+              <p className="mt-4 max-sm:ml-2  opacity-60 max-sm:w-[350px] sm:w-[550px] lg:w-[300px]">
                 "Whatever I try to do, I always try to give it my best and try
                 to be a killer because, at the end of the day, if you don't work
                 hard, you are not going to get food on your table."
@@ -191,10 +194,9 @@ function Home() {
               <b></b>
             </div>
           </div>
-          <div></div>
         </div>
 
-        <div className="max-sm:ml-7 sm:ml-10 md:ml-22 xl:ml-56 mb-50">
+        <div className="max-sm:ml-10 mt-20 sm:ml-10 md:ml-22 xl:ml-56 mb-50">
           <Link>
             <span className="bg-[#38506b] max-sm:text-2xl  p-2 rounded-lg text-[#e6ebf0d3] sm:text-[25px]">
               Shop Life Style Shoes
@@ -204,12 +206,34 @@ function Home() {
       </section>
 
       <section className="min-h-[1000px] max-sm:mt-[300px] xl:mt-[450px]">
-        <h1 className="quando flex justify-center text-9xl max-sm:text-7xl sm:text-8xl text-[#81A7C8]">Runners</h1>
+        <h1 className="quando flex justify-center item-center text-9xl max-sm:text-7xl sm:text-8xl text-[#81A7C8]">Runners</h1>
 
-        <div className="relative maxlg:flex max-lg:flex-col max-lg:items-center">
-      <img src={white_run} alt="" className="lg:absolute lg:left-10" />
-      <img src={colorfull_run} alt="" className="lg:absolute lg:left-[500px] lg:top-[200px]"/>
-      <img src={blue_run} alt=""  className="lg:absolute lg:right-10"/>
+        <div className="relative max-md:flex max-md:flex-col max-md:items-center mt-20 min-h-[700px] mb-50">
+      <img src={white_run} alt="" className="md:absolute md:w-[370px] md:left-0 lg:absolute lg:left-10" />
+      <img src={colorfull_run} alt="" className="md:absolute md:w-[370px] md:left-50 md:top-80 lg:absolute xl:left-[500px] lg:top-[200px] lg:left-[400px]"/>
+      <img src={blue_run} alt=""  className="md:absolute md:w-[370px] md:right-0 lg:absolute lg:right-10"/>
+        </div>
+        <div className="xl:ml-50 flex flex-col xl:gap-y-7 md:gap-y-10 max-md:gap-y-30">
+          <div className="flex items-center gap-x-7 max-md:flex-col">
+          <img src={run_1} alt="" className="md:w-[380px] max-md:w-[460px] md:ml-5 lg:w-[400px] rounded-lg"/>
+          <p>Conquer Peaks. Run the Mountain.</p>
+          </div>
+          <div className="flex items-center gap-x-7 max-md:flex-col"> 
+          <img src={run_2} alt="" className="md:w-[380px] max-md:w-[460px] md:ml-5 lg:w-[400px] rounded-lg"/>
+          <p>Stride Boldly Across the Bridge.</p>
+          </div>
+
+          <div className="flex items-center gap-x-7 max-md:flex-col">
+          <img src={run_3} alt="" className="md:w-[380px] max-md:w-[460px] md:ml-5 lg:w-[400px] rounded-lg"/>
+          <p>Power Every Step Uphill.</p>
+          </div>
+        </div>
+        <div className="max-sm:ml-7 mt-25  max-md:ml-25 md:ml-22 xl:ml-56 mb-50">
+          <Link>
+            <span className="bg-[#38506b] max-sm:text-2xl  p-2 rounded-lg text-[#e6ebf0d3] sm:text-[25px]">
+              Shop Life Style Shoes
+            </span>
+          </Link>
         </div>
       </section>
     </>
