@@ -196,7 +196,7 @@ function Home() {
           </div>
         </div>
 
-        <div className="max-sm:ml-10 mt-20 sm:ml-10 md:ml-22 xl:ml-56 mb-50">
+        <div className="max-sm:ml-30 mt-20 sm:ml-10 md:ml-22 xl:ml-70 mb-50">
           <Link>
             <span className="bg-[#38506b] max-sm:text-2xl  p-2 rounded-lg text-[#e6ebf0d3] sm:text-[25px]">
               Shop Life Style Shoes
