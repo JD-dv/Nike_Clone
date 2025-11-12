@@ -1,4 +1,5 @@
 import Sidebar from "../components/Sidebar";
+import Card from "../components/Card";
 import panel_left from "../assets/images/panel_left.svg";
 import panel_right from "../assets/images/panel_right.svg";
 import { useState } from "react";
@@ -10,19 +11,20 @@ function Shop() {
     setpanel((prev) => !prev);
   }
 
-  
-    function handleMediumDevice(){
-      setmeddiumDev(prev => !prev)
-    }
-  
+  function handleMediumDevice() {
+    setmeddiumDev((prev) => !prev);
+  }
 
   return (
     <div className="flex items-start h-screen p-2 overflow-hidden bg-gray-200">
-      <Sidebar panel={panel} mediumDev={mediumDev}/>
-      <span className="mt-10 cursor-pointer" onClick={() =>{
-        handlePanel();
-        handleMediumDevice();
-      }}>
+      <Sidebar panel={panel} mediumDev={mediumDev} />
+      <span
+        className="mt-10 cursor-pointer"
+        onClick={() => {
+          handlePanel();
+          handleMediumDevice();
+        }}
+      >
         <img
           src={panel ? panel_right : panel_left}
           alt=""
@@ -30,9 +32,14 @@ function Shop() {
         />
       </span>
       <main className="flex-1 bg-gray-200 p-2 overflow-y-auto h-full">
-        <div className="bg-white min-h-screen rounded-2xl p-2">
-          <div className="space-y-6 p-5">
-            <h2 className="text-2xl font-bold">Main Section</h2>
+        <div className="bg-white min-h-screen rounded-2xl p-2 ">
+          <h2 className="text-2xl font-bold">Main Section</h2>
+          <div className="p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
           </div>
         </div>
       </main>
