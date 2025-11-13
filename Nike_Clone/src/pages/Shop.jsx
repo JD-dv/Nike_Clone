@@ -2,10 +2,23 @@ import Sidebar from "../components/Sidebar";
 import Card from "../components/Card";
 import panel_left from "../assets/images/panel_left.svg";
 import panel_right from "../assets/images/panel_right.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 function Shop() {
   const [panel, setpanel] = useState(false);
   const [mediumDev, setmeddiumDev] = useState(false);
+  const [shoes, setShoes] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:8000")
+      .then((res) => res.json())
+      .then((data) => {
+        setShoes(data);
+      })
+      .catch((err) =>
+        console.error("Something went wrong. please try again", err)
+      );
+  }, []);
 
   function handlePanel() {
     setpanel((prev) => !prev);
@@ -35,11 +48,10 @@ function Shop() {
         <div className="bg-white min-h-screen rounded-2xl p-2 ">
           <h2 className="text-2xl font-bold">Main Section</h2>
           <div className="p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {shoes.map((shoe,index) => (
+            <Card key={index} shoe={shoe}/>
+            ))}
+            
           </div>
         </div>
       </main>

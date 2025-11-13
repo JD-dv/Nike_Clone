@@ -5,6 +5,6 @@
 
     export default async function connectMongodb() {
     await client.connect();
-    const db = client.db("School"); 
+    const db = client.db("nike_clone_db"); 
     return db;
     }
