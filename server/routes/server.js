@@ -35,7 +35,7 @@ app.get("/search", async (req, res) => {
 
     const nameResult = await collection
       .find({
-        model: { $regex: query, $option: "i" },
+        model: { $regex: query, $options: "i" },
       })
       .toArray();
 
