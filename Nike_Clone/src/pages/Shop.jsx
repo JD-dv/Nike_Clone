@@ -7,6 +7,10 @@ import { useState, useEffect } from "react";
 function Shop() {
   //implement searchbar component for future pages like apparel, hat, etc.
   //implement home button.
+  //implement sorting by price.
+  //add view detail page.
+  //implement style to shop.jsx
+  //improve grid responsive layout
 
   const [panel, setpanel] = useState(false);
   const [mediumDev, setmeddiumDev] = useState(false);
