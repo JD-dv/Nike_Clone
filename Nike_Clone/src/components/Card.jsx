@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Product_Detail from "../pages/Product_Detail";
 
 function Card({ shoe }) {
   return (
@@ -15,7 +16,7 @@ function Card({ shoe }) {
 
       <div className="flex justify-between mx-6">
         <p>⭐️</p>
-        <Link>
+         <Link to={`/product/${shoe._id}`} state={{ shoe }}>
           <p>View Details</p>
         </Link>
       </div>

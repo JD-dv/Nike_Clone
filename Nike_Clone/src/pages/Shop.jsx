@@ -2,6 +2,7 @@ import Sidebar from "../components/Sidebar";
 import Card from "../components/Card";
 import panel_left from "../assets/images/panel_left.svg";
 import panel_right from "../assets/images/panel_right.svg";
+import search from "../assets/images/search.png";
 import { useState, useEffect } from "react";
 
 function Shop() {
@@ -70,27 +71,28 @@ function Shop() {
         />
       </span>
       <main className="flex-1 bg-gray-200 p-2 overflow-y-auto h-full">
-        <div className="bg-white min-h-screen rounded-2xl p-4 ">
-          <h2 className="text-2xl font-bold">Main Section</h2>
-          <input
-            type="text"
-            className="border rounded-2xl p-1 text-center"
-            placeholder="Search Shoes"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                handleSearch();
-              }
-            }}
-          />
-          <button
-            id="searchButton"
-            className="cursor-pointer"
-            onClick={handleSearch}
-          >
-            Search
-          </button>
+        <div className="bg-white min-h-screen rounded-2xl p-4">
+          <div className="ml-7 mt-5">
+            <input
+              type="text"
+              className="border rounded-2xl p-1 text-center"
+              placeholder="Search Shoes"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                  handleSearch();
+                }
+              }}
+            />
+            <button
+              id="searchButton"
+              className="cursor-pointer ml-1"
+              onClick={handleSearch}
+            >
+              Search
+            </button>
+          </div>
           <div className="p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {shoes.map((shoe, index) => (
               <Card key={index} shoe={shoe} />
