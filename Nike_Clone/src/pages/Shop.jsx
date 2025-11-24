@@ -2,7 +2,7 @@ import Sidebar from "../components/Sidebar";
 import Card from "../components/Card";
 import panel_left from "../assets/images/panel_left.svg";
 import panel_right from "../assets/images/panel_right.svg";
-import search from "../assets/images/search.png";
+
 import { useState, useEffect } from "react";
 
 function Shop() {

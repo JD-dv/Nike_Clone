@@ -1,4 +1,6 @@
-
+import facebook from "../assets/icons/facebook.png"
+import instagram from "../assets/icons/instagram.png"
+import twitter from "../assets/icons/twitter.png"
 const Footer = () => {
   return (
     <footer className=" w-full h-110 bg-neutral-300 p-20 max-sm:full">
@@ -13,17 +15,17 @@ const Footer = () => {
         </p>
         <div className="flex gap-3 mb-4">
           <a href="https://x.com/nikestore?lang=en">
-            <img alt="X link" className="h-12 cursor-pointer" />
+            <img src={twitter} alt="X link" className="h-12 cursor-pointer" />
           </a>
           <a href="https://www.instagram.com/nike/?hl=en">
             <img
-  
+    src={instagram}
               alt="Instagram link"
               className="h-12 cursor-pointer"
             />
           </a>
           <a href="https://web.facebook.com/nike/?_rdc=1&_rdr#">
-            <img
+            <img src={facebook}
 
               alt="Facebook link"
               className="h-12 cursor-pointer"
