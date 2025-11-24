@@ -10,6 +10,7 @@ function Sidebar({ panel, mediumDev }) {
         mediumDev ? "max-md:block " : "max-md:hidden"
       } `}
     >
+   <Link to="/" className="text-gray-500 hover:text-black text-[10px]">← Back to main page</Link>
       <div className="flex items-center gap-x-2 mb-16">
         <img src={nike_1} alt="Nike Logo" className="w-[80px]" />
       </div>

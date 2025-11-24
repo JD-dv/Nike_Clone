@@ -54,6 +54,7 @@ function Shop() {
       );
   }
 
+  
   return (
     <div className="flex items-start h-screen p-2 overflow-hidden bg-gray-200">
       <Sidebar panel={panel} mediumDev={mediumDev} />

@@ -21,6 +21,7 @@ import run_1 from "../assets/images/run_1.png"
 import run_2 from "../assets/images/run_2.png"
 import run_3 from "../assets/images/run_3.png"
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer"
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -236,6 +237,7 @@ function Home() {
           </Link>
         </div>
       </section>
+      <Footer/>
     </>
   );
 }
