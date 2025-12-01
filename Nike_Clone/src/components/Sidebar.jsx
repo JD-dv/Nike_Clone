@@ -7,7 +7,7 @@ function Sidebar({ panel, mediumDev }) {
   return (
     <aside
       className={`flex flex-col  p-5 sticky top-0 ${panel ? "hidden" : ""} ${
-        mediumDev ? "max-md:block " : "max-md:hidden"
+        mediumDev ? "max-sm:block " : "max-sm:hidden"
       } `}
     >
    <Link to="/" className="text-gray-500 hover:text-black text-[10px]">← Back to main page</Link>

@@ -7,11 +7,9 @@ import { useState, useEffect } from "react";
 
 function Shop() {
   //implement searchbar component for future pages like apparel, hat, etc.
-  //implement home button.
   //implement sorting by price.
-  //add view detail page.
-  //implement style to shop.jsx
   //improve grid responsive layout
+  //implement error handler for api
 
   const [panel, setpanel] = useState(false);
   const [mediumDev, setmeddiumDev] = useState(false);
@@ -94,7 +92,7 @@ function Shop() {
               Search
             </button>
           </div>
-          <div className="p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="p-5 grid-container">
             {shoes.map((shoe, index) => (
               <Card key={index} shoe={shoe} />
             ))}

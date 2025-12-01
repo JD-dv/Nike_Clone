@@ -13,16 +13,16 @@
   font-family: var(--font-luckyguy);
 }
 
-.nosifer{
+.nosifer {
   font-family: var(--font-nosifer);
 }
 
-.quando{
-font-family: var(--font-quando);
+.quando {
+  font-family: var(--font-quando);
 }
 
-body{
-  background-color: #F5F5F5;
+body {
+  background-color: #f5f5f5;
 }
 :root {
   --shop: #3a4b5dd7;
@@ -43,4 +43,11 @@ body{
 }
 .my-scroll-hidden {
   scrollbar-width: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
 }
