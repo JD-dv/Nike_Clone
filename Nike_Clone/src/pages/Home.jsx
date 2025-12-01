@@ -32,7 +32,7 @@ function Home() {
           className="relative top-5 w-screen h-[950px] bg-cover bg-center text-[40px] rounded-xl"
           style={{ backgroundImage: `url(${Home_page})` }}
         >
-          <nav className="flex justify-center w-screen mx-auto mt-4 bg-white/30 backdrop-blur-sm rounded-3xl relative">
+          <nav className="flex justify-center w-screen  mt-4 bg-white/30 backdrop-blur-sm rounded-3xl relative">
             <img
               src={Nike_1}
               alt=""
